@@ -32,12 +32,13 @@ $gray04: #F8F9FA;
 
 @mixin body-style($fontSize) {
     font-size: $fontSize;
-    font-weight: 500;
     line-height: $fontSize * 1.5;
     letter-spacing: $fontSize * -0.04;
 
     @if $fontSize == 16px {
         font-weight: 400;
+    } @else {
+        font-weight: 500;
     }
 }
 
@@ -78,7 +79,7 @@ body, html {
 
 input[type="checkbox"] {
     display: none;
-    & + label {
+    + label {
         display: block;
         width: 24px;
         height: 24px;
@@ -100,26 +101,29 @@ input[type="checkbox"] {
     justify-content: space-between;
     align-items: center;
     height: 80px;
-    & .logo {
+    .mobile_menu {
+        display: none;
+    }
+    .logo {
         width: calc(530px / 4);
-        & a, & img {
+        a, img {
             display: block;
             width: 100%;
         }
     }
-    & .util {
+    .util {
         padding: 32px 36px 0 0;
-        & button {
+        button {
             width: 34px;
             height: 34px;
             background-repeat: no-repeat;
             background-position: center center;
             background-size: 24px 24px;
         }
-        & .cart_wrap {
+        .cart_wrap {
             position: relative;
             display: inline-block;
-            & .count {
+            .count {
                 position: absolute;
                 top: 0;
                 right: 0;
@@ -134,14 +138,18 @@ input[type="checkbox"] {
                 text-align: center;
             }
         }
-        & .cart {
+        .cart {
             background-image: url("../images/cart.png");
         }
-        & .fav {
+        .fav {
             margin-left: 22px;
             background-image: url("../images/favorite.png");
         }
     }
+}
+
+.mobile_navigator {
+    display: none;
 }
 
 .footer {

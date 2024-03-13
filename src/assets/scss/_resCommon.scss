@@ -1,0 +1,84 @@
+@media all and (max-width: 400px) {
+    .con_center{
+        width: auto;
+    }
+
+    .mobile_block {
+        display: block;
+    }
+    
+    .header {
+        position: fixed;
+        justify-content: center;
+        height: 56px;
+        width: 100%;
+        z-index: 2;
+        background-color: #fff;
+        .mobile_menu {
+            display: block;
+            position: absolute;
+            top: 13px;
+            left: 24px;
+            width: 36px;
+            height: 30px;
+            background: url("../images/btn_all_menu.png") no-repeat center center / 26px 20px;
+            &.on {
+                top: 8px;
+                left: 22px;
+                background: url("../images/icon_arrow_back.png") no-repeat center center / 40px 40px;
+            }
+        }
+        .logo {
+            width: calc(530px / 4);
+        }
+        .util {
+            display: none;
+        }
+    }
+
+    .mobile_navigator {
+        display: block;
+        opacity: 0;
+        position: fixed;
+        top: 55px;
+        left: -100%;
+        width: 100%;
+        height: calc(100% - 56px);
+        padding: 12px 26.5px;
+        background-color: #fff;
+        z-index: 3;
+        transition: 0.5s;
+        &.on {
+            opacity: 1;
+            left: 0;
+        }
+        li {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 24px;
+            letter-spacing: calc(18px * -0.04);
+            + li {
+                margin-top: 24px;
+            }
+            span {
+                width: 18px;
+                height: 18px;
+                background: url("../images/icon_arrow.png") no-repeat center center / 18px 18px;
+            }
+        }
+    }
+
+    .footer {
+        height: 264px;
+        padding-top: 60px;
+        font-size: 12px;
+        line-height: 1.67;
+        letter-spacing: calc(12px * -0.015);
+        &_logo {
+            margin-bottom: 24px;
+        }
+    }
+}

@@ -1,11 +1,12 @@
 .contents {
-    & .contents-inner {
+    padding-top: 56px;
+    .contents-inner {
         width: 1920px;
         margin: 0 auto;
     }
-    & .banner_slider {
+    .banner_slider {
         position: relative;
-        & .arrow {
+        .arrow {
             position: absolute;
             top: calc(50% - 17px);
             width: 34px;
@@ -21,21 +22,21 @@
                 background: url("../images/arrow_next.png") no-repeat center;
             }
         }
-        & .paging {
+        .paging {
             position: absolute;
             bottom: 85px;
             left: 0;
             width: 100%;
             z-index: 1;
             text-align: center;
-            & .page {
+            .page {
                 width: 16px;
                 height: 16px;
                 border-radius: 50%;
                 background-color: #fff;
                 text-indent: -9999px;
                 transition: 0.5s;
-                & + .page {
+                + .page {
                     margin-left: 15px;
                 }
                 &.current {
@@ -46,17 +47,17 @@
             }
         }
     }
-    & .banner_wrap {
+    .banner_wrap {
         position: relative;
         overflow: hidden;
         height: 600px;
-        & img {
+        img {
             display: block;
             width: 100%;
             height: 100%;
             object-fit: cover;
         }
-        & .banner {
+        .banner {
             position: absolute;
             width: 100%;
             height: 100%;
@@ -67,14 +68,14 @@
             &_info {
                 padding-top: 86px;
                 text-align: center;
-                & .tit {
+                .tit {
                     @include heading-style(72px);
                 }
-                & .content {
+                .content {
                     @include body-style(18px);
                     padding: 24px 0 48px;
                 }
-                & .btn_more {
+                .btn_more {
                     padding: 0 32px;
                     box-sizing: border-box;
                     background-color: $brand-dark-green;
@@ -92,10 +93,10 @@
         @include body-style(18px);
         overflow: hidden;
         background-color: #f7f7f7;
-        & .notice_inner {
+        .notice_inner {
             height: 77px;
         }
-        & .notice_item {
+        .notice_item {
             transform: translateY(150%);
             display: flex;
             align-items: center;
@@ -105,14 +106,14 @@
             &.leave {
                 animation: slideUp 0.5s ease forwards;
             }
-            & .cate {
+            .cate {
                 width: 125px;
             }
-            & .label {
+            .label {
                 width: calc(100% - 412px);
                 padding: 0 50px;
             }
-            & .date {
+            .date {
                 width: 287px;
                 text-align: right;
             }
@@ -123,7 +124,7 @@
 .product {
     &_section {
         padding: 100px 0;
-        & .title {
+        .title {
             @include heading-style(24px);
         }
     }
@@ -134,15 +135,14 @@
         padding-top: 53px;
     }
     &_item {
-        & .img_wrap {
+        .img_wrap {
             position: relative;
             height: 360px;
-            animation-duration: 5s;
-            & img {
+            img {
                 height: 100%;
                 object-fit: cover;
             }
-            & .dimmed {
+            .dimmed {
                 display: none;
                 position: absolute;
                 top: 0;
@@ -150,11 +150,11 @@
                 width: 100%;
                 height: 100%;
                 background-color: rgba(0, 0, 0, 0.3);
-                & .btn_wrap {
+                .btn_wrap {
                     position: absolute;
                     bottom: 20px;
                     right: 20px;
-                    & .btn_add {
+                    .btn_add {
                         width: 45px;
                         height: 45px;
                         text-indent: -9999px;
@@ -162,27 +162,27 @@
                         background-position: center center;
                         background-size: 100% 100%;
                     }
-                    & .add_cart {
+                    .add_cart {
                         background-image: url("../images/add_cart.png");
                     }
-                    & .add_favorite {
+                    .add_favorite {
                         margin-left: 10px;
                         background-image: url("../images/add_favorite.png");
                     }
                 }
             }
             &:hover {
-                & .dimmed {
+                .dimmed {
                     display: block;
                 }
             }
         }
-        & .detail_info {
+        .detail_info {
             padding: 32px 0;
-            & .tit {
+            .tit {
                 @include heading-style(32px);
             }
-            & .price {
+            .price {
                 @include heading-style(24px);
                 margin-top: 8px;
             }
