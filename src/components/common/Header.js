@@ -3,18 +3,15 @@ import logo from '../../assets/images/logo.png';
             
 function Header({ metaData, openModal, addedProductList }) {    
 
-    // 메뉴 상태를 관리하는 state를 추가합니다. 초기값은 false입니다.
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-    // 메뉴 버튼을 클릭했을 때 호출되는 함수입니다.
     const toggleMenu = () => {
-        setIsMenuOpen(!isMenuOpen); // 현재 상태를 반전시킵니다.
+        setIsMenuOpen(!isMenuOpen);
     };
 
-    // 메뉴 상태를 닫는 함수입니다.
     const closeModalAndToggleMenu = (modalType) => {
         openModal(modalType);
-        setIsMenuOpen(false); // 메뉴 상태를 false로 설정하여 닫습니다.
+        setIsMenuOpen(false); 
     };
 
     return (
