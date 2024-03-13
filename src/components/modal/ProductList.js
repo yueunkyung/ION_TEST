@@ -1,7 +1,7 @@
 import React, { useCallback, useEffect, useState } from 'react';
 import Confirm from './Confirm';
 
-function ProductList({ onClose, content, addedProductList, setAddedProductList }) {
+function ProductList({ onClose, content, addedProductList, setAddedProductList, handleOpenProductListModal }) {
     const [showConfirm, setShowConfirm] = useState(false);
     const [discount, setDiscount] = useState(0); // 할인 금액
     const [shippingFee, setShippingFee] = useState(3000); // 배송비
@@ -201,7 +201,7 @@ function ProductList({ onClose, content, addedProductList, setAddedProductList }
                     <button className="btn_close" aria-label="닫기" onClick={onClose}></button>
                 </div>
             </div>
-            {showConfirm && <Confirm onClose={handleClose} content="cart" />}
+            {showConfirm && <Confirm onClose={handleClose} content="cart" onShowProductList={handleOpenProductListModal} />}
         </>
     );
 }

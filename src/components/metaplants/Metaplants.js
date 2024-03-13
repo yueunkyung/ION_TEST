@@ -15,11 +15,6 @@ function Metaplants(props) {
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [modalContent, setModalContent] = useState('');
 
-    const handleOpenModal = (content) => {
-        setModalContent(content);
-        setIsModalOpen(true);
-    };
-
     const handleOpenProductListModal = (content) => {
         setModalContent(content);
         setIsModalOpen(true);
@@ -35,7 +30,7 @@ function Metaplants(props) {
 
     return (
         <>
-            <Header metaData={metaData} openModal={handleOpenModal} addedProductList={addedProductList} />
+            <Header metaData={metaData} openModal={handleOpenProductListModal} addedProductList={addedProductList} />
             <div className="contents">
                 <div className="contents-inner">
                     {metaData && metaData.slideList && <Banner slideList={metaData.slideList}/>}
@@ -46,7 +41,7 @@ function Metaplants(props) {
                 </div>
             </div>
             <Footer />
-            {isModalOpen && <ProductList onClose={() => setIsModalOpen(false)} content={modalContent} addedProductList={addedProductList} setAddedProductList={setAddedProductList} />}
+            {isModalOpen && <ProductList onClose={() => setIsModalOpen(false)} content={modalContent} addedProductList={addedProductList} setAddedProductList={setAddedProductList} handleOpenProductListModal={handleOpenProductListModal} />}
         </>
     );
 }
