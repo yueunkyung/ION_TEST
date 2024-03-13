@@ -1,0 +1,167 @@
+/* font */
+$global-font-size: 10px;
+$global-line-height: 1.5;
+$global-font-family: "Pretendard";
+$global-font-family-optimization: "Pretendard", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+
+/* color */
+$brand-green: #2B8A3E;
+$brand-dark-green: #37B24D;
+
+$sub-yellow: #FCC419;
+$sub-light-yellow: #FFEC99;
+$sub-red: #E03131;
+
+$gray01: #212529;
+$gray02: #495057;
+$gray03: #DEE2E6;
+$gray04: #F8F9FA;
+
+/* font size */
+@mixin heading-style($fontSize) {
+    font-size: $fontSize;
+    font-weight: 700;
+    letter-spacing: $fontSize * -0.04;
+    
+    @if $fontSize == 24px {
+        line-height: $fontSize * 1.35;
+    } @else {
+        line-height: $fontSize * 1.3;
+    }
+}
+
+@mixin body-style($fontSize) {
+    font-size: $fontSize;
+    font-weight: 500;
+    line-height: $fontSize * 1.5;
+    letter-spacing: $fontSize * -0.04;
+
+    @if $fontSize == 16px {
+        font-weight: 400;
+    }
+}
+
+@mixin click-style($type) {
+    font-size: 20px;
+    line-height: 20px * 1.35;
+
+    @if $type == "button" {
+        font-weight: 700;
+    }
+    @if $type == "link" {
+        font-weight: 600;
+        color: $brand-dark-green;
+    }
+}
+
+* { box-sizing: border-box; }
+
+body, html {
+    font-family: $global-font-family-optimization;
+    font-size: $global-font-size;
+    line-height: $global-line-height;
+    color: $gray01;
+}
+
+.con_center{
+    width: 1200px;
+    margin: 0 auto;
+}
+        
+.img_wrap {
+    overflow: hidden;
+    img {
+        display: block;
+        width: 100%;
+    }
+}
+
+input[type="checkbox"] {
+    display: none;
+    & + label {
+        display: block;
+        width: 24px;
+        height: 24px;
+        background: url("../images/checkbox_default.png") no-repeat 0px 0px / contain;
+    }
+    &:checked + label {
+        background: url("../images/checkbox_active.png") no-repeat 0px 0px / contain;
+    }
+    &:hover + label {
+        background: url("../images/checkbox_hover.png") no-repeat 0px 0px / contain;
+    }
+    &:disabled + label {
+        background: url("../images/checkbox_disabled.png") no-repeat 0px 0px / contain;
+    }
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    & .logo {
+        width: calc(530px / 4);
+        & a, & img {
+            display: block;
+            width: 100%;
+        }
+    }
+    & .util {
+        padding: 32px 36px 0 0;
+        & button {
+            width: 34px;
+            height: 34px;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: 24px 24px;
+        }
+        & .cart_wrap {
+            position: relative;
+            display: inline-block;
+            & .count {
+                position: absolute;
+                top: 0;
+                right: 0;
+                min-width: 16px;
+                min-height: 16px;
+                line-height: 16px;
+                background-color: $sub-red;
+                color: #fff;
+                font-weight: 600;
+                font-size: 12px;
+                border-radius: 50%;
+                text-align: center;
+            }
+        }
+        & .cart {
+            background-image: url("../images/cart.png");
+        }
+        & .fav {
+            margin-left: 22px;
+            background-image: url("../images/favorite.png");
+        }
+    }
+}
+
+.footer {
+    height: 386px;
+    text-align: center;
+    padding-top: 112px;
+    background-color: #333;
+    color: #fff;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: calc(16px * -0.015);
+    &_logo {
+        display: flex;
+        align-items: center;
+        margin: 0 auto;
+        width: calc(530px / 4);
+        height: 80px;
+        img { 
+            display: block;
+            width: 100%;
+        }
+    }
+}

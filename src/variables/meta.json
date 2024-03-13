@@ -1,0 +1,84 @@
+{
+    "title": "METAPLANTS",
+    "slideList" : [
+        {
+            "id": 1,
+            "title": "METAPLANTS",
+            "content": "고품질의 식물과 전문가의 조언을 제공하여 고객들에게 만족스러운 쇼핑 경험을 선사하는 메타플랜츠는 식물은 건강하고 아름답게 자란다는 것을 보장하며, 실내 및 실외에서 모두 훌륭하게 성장합니다. 우리의 목표는 고객들이 집안에 자연의 아름다움을 느낄 수 있도록 돕는 것입니다. METAPLANTS에서 멋진 식물을 찾아보세요!",
+            "image": "https://stg-api.metaflyer.co.kr/imageLibrary/image/202403/11/ec51ce9c-427a-4682-823d-647072136517.jpg",
+            "buttonLabel": "더 알아보기",
+            "url": "https://www.metaflyer.io"
+        },
+        {
+            "id": 2,
+            "title": "인테리어 초보가 주목해야 할 식물 인테리어 트렌드",
+            "content": "자연을 가까이하고 싶은 현대인에게 꼭 필요한 식물은 인테리어 아이템으로도 사랑받고 있다. 요즘 식물 인테리어는 어떤 것이 있을까?",
+            "image": "https://stg-api.metaflyer.co.kr/imageLibrary/image/202403/11/17dec24c-b231-4e65-bd45-ccbf1fdd126b.jpg",
+            "buttonLabel": "기사 보러가기",
+            "url": "https://www.womansense.co.kr/woman/article/43873"
+        },
+        {
+            "id": 3,
+            "title": "METAPLANTS",
+            "content": "메타플랜츠 더 알아보기",
+            "image": "https://stg-api.metaflyer.co.kr/imageLibrary/image/202403/11/88e46c0c-6c45-4734-904e-7713dc0bbb08.jpg",
+            "buttonLabel": "더 알아보기",
+            "url": "https://www.metaflyer.io"
+        }
+    ],
+    "noticeList" : [
+        {
+            "category": "신제품",
+            "label": "03월 시즌 상품 - 튤립",
+            "date": 20240220
+        },
+        {
+            "category": "배송",
+            "label": "3월 배송 안내",
+            "date": 20240223
+        },
+        {
+            "category": "공지",
+            "label": "METAPLANTS 회원등급 안내",
+            "date": 20240302
+        }
+    ],
+    "productList" : [
+        {
+            "id": 1,
+            "label": "내맘대로 선인장",
+            "price": 24000,
+            "image": "https://stg-api.metaflyer.co.kr/imageLibrary/image/202403/11/d43c3633-b1af-4b91-8073-3d321d1306ea.jpg"
+        },
+        {
+            "id": 2,
+            "label": "하트잎+토분 세트",
+            "price": 44000,
+            "image": "https://stg-api.metaflyer.co.kr/imageLibrary/image/202403/11/04011538-8b68-4383-ac05-87b7b8c8c371.jpg"
+        },
+        {
+            "id": 3,
+            "label": "미니 선인장 3종세트",
+            "price": 30000,
+            "image": "https://stg-api.metaflyer.co.kr/imageLibrary/image/202403/11/d9a785eb-d29b-4d0b-949b-f844bf745d29.jpg"
+        },
+        {
+            "id": 4,
+            "label": "히메몬스테라 세트",
+            "price": 54000,
+            "image": "https://stg-api.metaflyer.co.kr/imageLibrary/image/202403/11/1731723c-abef-49e5-8e79-55c3649aebc9.jpg"
+        },
+        {
+            "id": 5,
+            "label": "이탈리아 프리미엄 토분",
+            "price": 44000,
+            "image": "https://stg-api.metaflyer.co.kr/imageLibrary/image/202403/11/badbca08-3afe-4f54-b637-d5a660dda4f5.jpg"
+        },
+        {
+            "id": 6,
+            "label": "스투키 토분 세트",
+            "price": 14000,
+            "image": "https://stg-api.metaflyer.co.kr/imageLibrary/image/202403/11/b8114abb-62fe-45ae-826d-3ac92e54cff4.jpg"
+        }
+    ]
+}
