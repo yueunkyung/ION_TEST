@@ -80,7 +80,7 @@
                     }
                 }
             }
-            & .empty {
+            .empty {
                 @include body-style(16px);
                 margin-top: auto;
                 padding-bottom: 24px;

@@ -145,7 +145,7 @@
                 }
             }
         }
-        & .empty {
+        .empty {
             @include body-style(18px);
             text-align: center;
             margin-top: 136px;
