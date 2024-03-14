@@ -11,7 +11,7 @@ function Notice({ noticeList }) {
       setTimeout(() => {
         setCurrentIndex((prevIndex) => (prevIndex + 1) % noticeList.length);
       }, 3000);
-    }, 4500);
+    }, 3500);
     return () => clearInterval(interval);
   }, [noticeList.length]);
 
