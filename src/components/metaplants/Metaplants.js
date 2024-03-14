@@ -25,7 +25,7 @@ function Metaplants(props) {
     }, []);
 
     useEffect(() => {
-        console.log("업데이트된 myData:", metaData);
+        //console.log("업데이트된 metaData:", metaData);
     }, [metaData]);
 
     useEffect(() => {
