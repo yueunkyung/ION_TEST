@@ -1,5 +1,5 @@
 import Confirm from 'components/modal/Confirm';
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 function Products({productList, setAddedProductList, handleOpenProductListModal}) {
     const [isModalOpen, setIsModalOpen] = useState(false);
@@ -61,6 +61,14 @@ function Products({productList, setAddedProductList, handleOpenProductListModal}
     const closeModal = () => {
         setIsModalOpen(false);
     };
+    
+    useEffect(() => {
+        if (isModalOpen) {
+            document.body.style.overflow = 'hidden';
+        } else {
+            document.body.style.overflow = 'unset';
+        }
+    }, [isModalOpen]);
 
     return (
         <>

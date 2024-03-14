@@ -28,6 +28,14 @@ function Metaplants(props) {
         console.log("업데이트된 myData:", metaData);
     }, [metaData]);
 
+    useEffect(() => {
+        if (isModalOpen) {
+            document.body.style.overflow = 'hidden';
+        } else {
+            document.body.style.overflow = 'unset';
+        }
+    }, [isModalOpen]);
+
     return (
         <>
             <Header metaData={metaData} openModal={handleOpenProductListModal} addedProductList={addedProductList} />
